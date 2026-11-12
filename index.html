@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LaunchKit — The cheapest Flutter starter kit with REAL auth and REAL payments</title>
+<meta name="description" content="LaunchKit is a complete Flutter starter kit for subscription apps: real Firebase Auth, real RevenueCat paywall, onboarding, dashboard, settings. $19 one-time, $9 launch week (Nov 14–21). Try the live demo before you buy.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="#">🚀 LaunchKit</a>
+    <nav>
+      <a href="#compare">Real vs mocked</a>
+      <a href="#inside">What's inside</a>
+      <a href="#screens">Screens</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" href="#pricing">Get it — $9</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">Flutter SaaS starter kit · v1.0</p>
+    <h1>The cheapest Flutter starter kit with <span>REAL auth</span> and <span>REAL payments</span>.</h1>
+    <p class="lede">LaunchKit is a complete starter for subscription apps: Firebase Auth
+    (email + Google), a RevenueCat paywall (Free / Pro), onboarding, dashboard
+    and settings — clean architecture, widget tests, full docs. You start from
+    a working app, not a blank project.</p>
+    <div class="cta-row">
+      <!-- TODO: replace the Buy href with the Payhip product URL once the listing is live (Ron's 10-minute gate). -->
+      <a class="btn btn-primary" href="#pricing">Get LaunchKit — $9 launch price</a>
+      <a class="btn btn-secondary" href="demo/" target="_blank" rel="noopener">▶ Try the live demo</a>
+    </div>
+    <p class="hero-note">No account needed for the demo — sign up with any email and tap through every screen.</p>
+    <div class="badges">
+      <span>✓ Verified on Flutter 3.47.9</span>
+      <span>✓ Gradle 9.3.1 · Kotlin 2.4.0</span>
+      <span>✓ Widget tests green</span>
+      <span>✓ Agent-ready docs included</span>
+    </div>
+  </div>
+</section>
+
+<section id="compare" class="section">
+  <div class="container">
+    <h2>Real vs mocked — read this before you buy any starter kit</h2>
+    <p class="section-sub">Most cheap Flutter starters fake the hard parts. LaunchKit does not.
+    Here is the honest comparison with the best-known $39 kit in this category.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th></th><th>LaunchKit — $19</th><th>The $39 Gumroad kit</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Email / password auth</td><td><strong>Real Firebase Auth</strong></td><td>Mocked</td></tr>
+          <tr><td>Google sign-in</td><td><strong>Real Google Sign-In</strong></td><td>Not included</td></tr>
+          <tr><td>Subscription payments</td><td><strong>Real RevenueCat</strong> (App Store / Play billing)</td><td>Mock Stripe flows + a Node.js stub</td></tr>
+          <tr><td>Paywall</td><td>Real offerings + entitlement check</td><td>Mock</td></tr>
+          <tr><td>Tests</td><td>Widget + unit tests, green</td><td>—</td></tr>
+          <tr><td>Agent-ready docs (CLAUDE.md / AGENTS.md)</td><td><strong>Included</strong></td><td>—</td></tr>
+          <tr><td>Live demo you can tap</td><td><strong>Yes — try it above</strong></td><td>Screenshots only</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="section-sub">More expensive kits with real auth and payments exist too ($69–$149).
+    LaunchKit is the cheapest one that has both for real — and the cheapest
+    kit anywhere with agent-ready docs and a live demo you can tap.</p>
+  </div>
+</section>
+
+<section id="inside" class="section section-alt">
+  <div class="container">
+    <h2>What's inside</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">🔐</div>
+        <h3>Auth that actually works</h3>
+        <p>Sign in / sign up with email + password, Google sign-in, sign out,
+        delete account. Firebase Auth when configured, a clearly-labelled demo
+        backend until then.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💳</div>
+        <h3>Paywall that takes money</h3>
+        <p>Free vs Pro, monthly / yearly toggle, purchase, restore purchases.
+        RevenueCat when configured; a simulated purchase in demo mode so you
+        can click the whole flow.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">👋</div>
+        <h3>Onboarding + dashboard + settings</h3>
+        <p>Three-page onboarding, a dashboard with plan badge and stats, and
+        settings with theme switching and subscription management.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧱</div>
+        <h3>Clean architecture</h3>
+        <p>One folder per feature, services behind interfaces. Swapping the
+        backend is a one-line change. No code generation, no magic.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✅</div>
+        <h3>Tests, green out of the box</h3>
+        <p>Widget tests for every screen plus unit tests for the services.
+        Run <code>flutter test</code> — green before you change a line.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>Agent-ready docs</h3>
+        <p><code>CLAUDE.md</code> and <code>AGENTS.md</code> ship in the kit,
+        so an AI coding agent can work in the codebase correctly on day one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="screens" class="section">
+  <div class="container">
+    <h2>The demo app, screen by screen</h2>
+    <p class="section-sub">These are screenshots of the actual demo — the same app you can
+    tap in the <a href="demo/" target="_blank" rel="noopener">live demo</a>.</p>
+    <div class="shots">
+      <figure>
+        <img src="assets/shot-signin.png" alt="Sign-in screen">
+        <figcaption>Sign in — email + Google</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/shot-onboarding.png" alt="Onboarding screen">
+        <figcaption>Onboarding — 3 pages</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/shot-dashboard.png" alt="Dashboard screen">
+        <figcaption>Dashboard — plan badge + stats</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/shot-paywall.png" alt="Paywall screen">
+        <figcaption>Paywall — monthly / yearly</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/shot-settings.png" alt="Settings screen">
+        <figcaption>Settings — theme + subscription</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2>From download to your app in three steps</h2>
+    <div class="steps">
+      <div class="step"><span class="step-num">1</span><h3>Run the demo</h3>
+        <p><code>flutter pub get && flutter run</code> — it works with no
+        backend, no keys, no account. Click every screen.</p></div>
+      <div class="step"><span class="step-num">2</span><h3>Wire up the real backends</h3>
+        <p>Firebase Auth and RevenueCat, about 15 minutes each on their free
+        tiers. Step-by-step guides included.</p></div>
+      <div class="step"><span class="step-num">3</span><h3>Make it yours</h3>
+        <p>One theme file, one config file. Rename it, re-skin it, replace
+        the onboarding copy, ship it as your product.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="section">
+  <div class="container">
+    <h2>Pricing</h2>
+    <div class="price-card">
+      <p class="price-eyebrow">Single-project licence</p>
+      <p class="price"><span class="price-now">$9</span> <span class="price-was">$19</span></p>
+      <p class="price-note">Week-1 launch price (Nov 14–21). Rises to $19 on Nov 22. One-time payment — no subscription, no royalties.</p>
+      <ul>
+        <li>✓ Full Flutter source code (auth, paywall, onboarding, dashboard, settings)</li>
+        <li>✓ Real Firebase Auth + RevenueCat integration code</li>
+        <li>✓ Widget + unit tests, green</li>
+        <li>✓ Setup guides (Firebase, RevenueCat), customisation guide, common-errors guide</li>
+        <li>✓ Agent-ready docs (CLAUDE.md / AGENTS.md)</li>
+        <li>✓ Future 1.x updates included</li>
+        <li>✓ Use in one app, modify freely, ship it</li>
+      </ul>
+      <!-- TODO: replace the Buy href with the Payhip product URL once the listing is live. -->
+      <a class="btn btn-primary btn-block" href="#">Get LaunchKit — $9</a>
+      <p class="price-fine">Sold as a digital download. You get the complete kit as a ZIP.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section section-alt">
+  <div class="container">
+    <h2>Honest answers</h2>
+    <div class="faq">
+      <h3>Does this publish my app to the App Store / Google Play?</h3>
+      <p>No — and anyone selling a starter kit that promises publishing without
+      mentioning the cost is hiding it. Apple Developer is $99/year and Google
+      Play is a $25 one-time fee, both needing a payment card in your name.
+      LaunchKit is the code: auth, paywall, screens, architecture. The store
+      accounts are yours to create.</p>
+      <h3>What do I need to use it?</h3>
+      <p>A working Flutter setup (3.47+) and basic Dart. If you can run
+      <code>flutter run</code>, you can use this kit. Firebase and RevenueCat
+      both have free tiers — no card needed for either to start.</p>
+      <h3>Is the auth really real?</h3>
+      <p>Yes. The Firebase Auth and Google Sign-In code is the real
+      integration — the same calls a production app makes. It runs in demo
+      mode (in-memory, clearly labelled) until you paste your Firebase config,
+      which takes about 15 minutes with the included guide.</p>
+      <h3>And the payments?</h3>
+      <p>Also real. The paywall reads your RevenueCat offering and checks the
+      <code>pro</code> entitlement, so Pro survives reinstalls. In demo mode
+      purchases are simulated so you can test the flow without spending anything.</p>
+      <h3>What can I build with it?</h3>
+      <p>One app under the single-project licence — any subscription app:
+      a habit tracker, a fitness app, a notes app, whatever you are building.
+      Modify it freely and ship it.</p>
+      <h3>What Flutter version is it verified on?</h3>
+      <p>Flutter 3.47.9, Gradle 9.3.1, AGP 9.1.0, Kotlin 2.4.0 — the exact
+      stack is listed in the README and updated with every release. Starter
+      kits rot when the toolchain moves; this one is pinned to versions that
+      work together today.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>🚀 LaunchKit — the cheapest Flutter starter kit with REAL auth and REAL payments.</p>
+    <p class="fine">© 2026 LaunchKit. Single-project licence. Flutter is a trademark of Google LLC.</p>
+  </div>
+</footer>
+
+</body>
+</html>
