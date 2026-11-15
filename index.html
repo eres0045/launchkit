@@ -33,7 +33,62 @@
   }
 }
 </script>
-<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does this publish my app to the App Store / Google Play?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — and anyone selling a starter kit that promises publishing without mentioning the cost is hiding it. Apple Developer is $99/year and Google Play is a $25 one-time fee, both needing a payment card in your name. LaunchKit is the code: auth, paywall, screens, architecture. The store accounts are yours to create."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do I need to use it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A working Flutter setup (3.47+) and basic Dart. If you can run flutter run, you can use this kit. Firebase and RevenueCat both have free tiers — no card needed for either to start."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the auth really real?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Firebase Auth and Google Sign-In code is the real integration — the same calls a production app makes. It runs in demo mode (in-memory, clearly labelled) until you paste your Firebase config, which takes about 15 minutes with the included guide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "And the payments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Also real. The paywall reads your RevenueCat offering and checks the pro entitlement, so Pro survives reinstalls. In demo mode purchases are simulated so you can test the flow without spending anything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can I build with it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One app under the single-project licence — any subscription app: a habit tracker, a fitness app, a notes app, whatever you are building. Modify it freely and ship it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Flutter version is it verified on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Flutter 3.47.9, Gradle 9.3.1, AGP 9.1.0, Kotlin 2.4.0 — the exact stack is listed in the README and updated with every release. Starter kits rot when the toolchain moves; this one is pinned to versions that work together today."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
